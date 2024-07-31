@@ -10,23 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
     <title>Viagens</title>
+    <script src="js/script.js"defer></script>
 </head>
 <body class="font-Poppins bg-[#E3E3E3]">
-    <header class="w-full py-5 fixed top-0 left-0">
+    <header id="header" class="w-full py-5 fixed top-0 left-0 duration-300 z-10">
         <div class="view flex justify-between items-center">
             <div class="max-w-10">
-                <a href="#"><img src="imgs/logotipo.webp" alt="logo"></a>
+                <a href="#"><img id="menu-logo" src="imgs/logotipo.webp" alt="logo"></a>
             </div>
             <nav>
                 <ul class="flex gap-x-20">
-                    <li><a href="#" class="text-white inline-block hover:scale-110 duration-300">Início</a></li>
-                    <li><a href="#" class="text-white inline-block hover:scale-110 duration-300">Destinos</a></li>
-                    <li><a href="#" class="text-white inline-block hover:scale-110 duration-300">Hotéis</a></li>
-                    <li><a href="#" class="text-white inline-block hover:scale-110 duration-300">Passagens</a></li>
+                    <li><a href="#" id="menu-link" class="inline-block text-white hover:scale-110 duration-300">Início</a></li>
+                    <li><a href="#" id="menu-link" class="inline-block text-white hover:scale-110 duration-300">Destinos</a></li>
+                    <li><a href="#" id="menu-link" class="inline-block text-white hover:scale-110 duration-300">Hotéis</a></li>
+                    <li><a href="#" id="menu-link" class="inline-block text-white hover:scale-110 duration-300">Passagens</a></li>
                 </ul>
             </nav>
             <a href="#">
-                <button class="w-[140px] h-[50px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black">Contato</button>
+                <button id="menu-btn" class="w-[140px] h-[50px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black">Contato</button>
             </a>
         </div>
 
