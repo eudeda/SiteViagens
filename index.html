@@ -18,7 +18,7 @@
             <div class="max-w-10">
                 <a href="#"><img id="menu-logo" src="imgs/logotipo.webp" alt="logo"></a>
             </div>
-            <nav>
+            <nav class="max-[796px]:hidden">
                 <ul class="flex gap-x-20">
                     <li><a href="#" id="menu-link" class="inline-block text-white hover:scale-110 duration-300">Início</a></li>
                     <li><a href="#" id="menu-link" class="inline-block text-white hover:scale-110 duration-300">Destinos</a></li>
@@ -27,7 +27,7 @@
                 </ul>
             </nav>
             <a href="#">
-                <button id="menu-btn" class="w-[140px] h-[50px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black">Contato</button>
+                <button id="menu-btn" class="w-[140px] h-[50px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black max-[796px]:hidden">Contato</button>
             </a>
         </div>
 
@@ -37,8 +37,8 @@
         <div class="view h-full flex items-center">
 
             <div class="text-white">
-                <h1 class="text-[4em] leading-[70px] font-extralight">Descubra um <span class="block font-extrabold">novo mundo</span></h1>
-                <p class="text-xl font-light my-5">Encontre destinos que ficarão para sempre em sua memória<span class="block">com um orçamento que cabe no seu bolso</span></p>
+                <h1 class="text-[4em] leading-[70px] font-extralight max-[796px]:text-5xl">Descubra um <span class="block font-extrabold">novo mundo</span></h1>
+                <p class="text-xl font-light my-5 max-[796px]:text-base">Encontre destinos que ficarão para sempre em sua memória<span class="block max-[796px]:inline">com um orçamento que cabe no seu bolso</span></p>
                 <a href="#"><button class="w-[220px] h-[60px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black">Quero conhecer</button></a>
             </div>
         </div>
@@ -47,34 +47,34 @@
     <main>
         <section class="py-20">
             <div class="view">
-                <article class="flex justify-between">
-                        <div class="flex flex-col justify-center w-2/4">
+                <article class="flex justify-between max-[796px]:flex-col">
+                        <div class="flex flex-col justify-center w-2/4 max-[796px]:w-full">
                             <h3 class="text-5xl font-bold my-5"><span class="font-extralight">Viaje </span>com<br>conforto</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo voluptatibus quasi Lorem.</p>
+                            <p class="max-[796px]:mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo voluptatibus quasi Lorem.</p>
                         </div>
 
-                        <div class="max-w-[480px]">
+                        <div class="max-w-[480px] max-[900px]:w-96">
                             <img class="" src="imgs/aviao.webp" alt="foto">
                         </div>
                 </article>
 
-                <article class="flex justify-between flex-row-reverse my-20">
-                    <div class="flex flex-col justify-center w-2/4">
+                <article class="flex justify-between flex-row-reverse my-20 max-[796px]:flex-col">
+                    <div class="flex flex-col justify-center w-2/4 max-[796px]:w-full max-[900px]:ml-10">
                         <h3 class="text-5xl font-bold my-5"><span class="font-extralight">Os </span>melhores<br>destinos</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo voluptatibus quasi Lorem.</p>
+                        <p class="max-[796px]:mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo voluptatibus quasi Lorem.</p>
                     </div>
 
-                    <div class="max-w-[480px]">
+                    <div class="max-w-[480px] max-[900px]:w-96">
                         <img class="" src="imgs/carro.webp" alt="foto">
                     </div>
             </article>
 
-            <article class="flex justify-between">
-                <div class="flex flex-col justify-center w-2/4">
-                    <h3 class="text-5xl font-bold my-5"><span class="font-extralight">Viaje </span>melhores<br>hotéis</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo voluptatibus quasi Lorem.</p>
+            <article class="flex justify-between max-[796px]:flex-col">
+                <div class="flex flex-col justify-center w-2/4 max-[796px]:w-full">
+                    <h3 class="text-5xl font-bold my-5"><span class="font-extralight">Os </span>melhores<br>hotéis</h3>
+                    <p class="max-[796px]:mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo voluptatibus quasi Lorem.</p>
                 </div>
-                <div class="max-w-[480px]">
+                <div class="max-w-[480px] max-[900px]:w-96">
                     <img class="" src="imgs/hoteis.webp" alt="foto">
                 </div>
             </article>
@@ -83,12 +83,12 @@
 
         <section class="bg-white py-20">
             <div class="view">
-                <article class="flex items-center gap-x-[350px]">
-                    <div>
-                        <h3 class="text-5xl mb-5">Fale agora com a <span class="block font-bold">nossa equipe</span></h3>
-                        <p class="">E solicite um orçamento que cabe no seu bolso</p>
+                <article class="flex items-center gap-x-[350px] max-[796px]:flex-col max-[900px]:gap-x-0">
+                    <div class="w-1/2 max-[900px]:w-3/5">
+                        <h3 class="text-5xl mb-5 max-[796px]:text-4xl">Fale agora com a<span class="block font-bold">nossa equipe</span></h3>
+                        <p class="max-[796px]:mb-5">E solicite um orçamento que cabe no seu bolso</p>
                     </div>
-                    <div class="w-96">
+                    <div class="w-96 max-[796px]:w-full max-[900px]:w-2/5">
                         <a href="#" class="">
                             <button class="flex items-center justify-between py-0 px-[60px] w-full h-[60px] mx-auto mt-0 mb-5 border-2 border-black
                             hover:bg-black hover:text-white duration-300"><i class="bi bi-whatsapp text-xl"></i> <p>Chamar no Whatsapp</p></button>
@@ -113,8 +113,8 @@
         <section class="h-[600px] bg-[url('/imgs/hotel-bg.webp')] bg-no-repeat bg-center bg-cover bg-fixed relative">
             <div class="relative view z-[2] flex justify-center items-center h-full">
                 <div class="text-center text-white">
-                    <h3 class="text-5xl font-extralight">Hospedagem?<span class="block font-semibold">Deixa com a gente</span></h3>
-                    <p class="my-5 text-xl font-light">Os melhores hotéis e pousadas para o máximo de conforto para você e sua família</p>
+                    <h3 class="text-5xl font-extralight max-[796px]:text-4xl">Hospedagem?<span class="block font-semibold">Deixa com a gente</span></h3>
+                    <p class="my-5 text-xl font-light max-[796px]:text-base">Os melhores hotéis e pousadas para o máximo de conforto para você e sua família</p>
                     <a href="#"><button class="w-[220px] h-[60px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black">Conheça os hotéis</button></a>
                 </div>
             </div>
@@ -122,42 +122,42 @@
         </section>
 
         <section class="py-20">
-            <div class="view flex">
-                <div class="flex-1 ">
-                    <div class="sticky top-1/2 pb-9">
-                        <h3 class="text-6xl font-light">Como<span class="block font-semibold">funciona?</span></h3>
+            <div class="view flex max-[796px]:flex-col">
+                <div class="flex-1 max-[796px]:w-full">
+                    <div class="sticky top-1/2 pb-9 max-[796px]:static">
+                        <h3 class="text-6xl font-light max-[796px]:text-5xl">Como<span class="block font-semibold">funciona?</span></h3>
                     </div>
                 </div>
-                <div class="flex-1">
-                    <article class="flex items-center border-2 border-black gap-5 p-5 mb-10">
+                <div class="flex-1 max-[796px]:w-full">
+                    <article class="flex items-center border-2 border-black gap-5 p-5 mb-10 max-[796px]:flex-col">
                         <div>
                             <img class="max-w-24" src="imgs/atendimento-ao-cliente.webp" alt="atendimento ao cliente">
                         </div>
-                        <div>
+                        <div class="max-[796px]:text-center">
                             <h4 class="text-2xl font-bold mb-3">Você <span class="font-light">fala com a gente</span></h4>
-                            <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt commodi.</p>
+                            <p class="text-base max-[796px]:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt commodi.</p>
                         </div>
                     </article>
 
-                    <article class="flex items-center border-2 border-black gap-5 p-5 mb-10">
+                    <article class="flex items-center border-2 border-black gap-5 p-5 mb-10 max-[796px]:flex-col">
                         <div>
                             <img class="max-w-24" src="imgs/planejamento.webp" alt="atendimento ao cliente">
                         </div>
-                        <div>
+                        <div class="max-[796px]:text-center">
                             <h4 class="text-2xl font-bold mb-3">A gente <span class="font-light">planeja</span></h4>
-                            <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt commodi.</p>
+                            <p class="text-base max-[796px]:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt commodi.</p>
                         </div>
 
                     </article>
 
-                    <article class="flex items-center border-2 border-black gap-5 p-5 mb-10">
+                    <article class="flex items-center border-2 border-black gap-5 p-5 mb-10 max-[796px]:flex-col">
                         <div>
                             <img class="max-w-24" src="imgs/viagem.webp" alt="atendimento ao cliente">
                         </div>
 
-                        <div>
+                        <div class="max-[796px]:text-center">
                             <h4 class="text-2xl font-bold mb-3">Partiu <span class="font-light">viajar</span></h4>
-                            <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt commodi.</p>
+                            <p class="text-base max-[796px]:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt commodi.</p>
                         </div>
                     </article>
                     
@@ -168,13 +168,12 @@
 
         <section class="bg-white py-20">
             <div class="view">
-                <article class="flex items-center gap-x-[350px]">
+                <article class="flex items-center gap-x-[350px] max-[796px]:flex-col">
                     <div>
-                        <h3 class="text-5xl mb-5">Fale agora com a <span class="block font-bold">nossa equipe</span></h3>
-                        <p class="">E solicite um orçamento que cabe no seu bolso</p>
+                        <h3 class="text-5xl mb-5 max-[796px]:text-4xl">Fale agora com a <span class="block font-bold">nossa equipe</span></h3>
+                        <p class="max-[796px]:mb-5">E solicite um orçamento que cabe no seu bolso</p>
                     </div>
-                    <div class="w-96">
-                        
+                    <div class="w-96 max-[796px]:w-full">
                         <a href="#" class="">
                             <button class="flex items-center justify-between py-0 px-[60px] w-full h-[60px] mx-auto mt-0 mb-5 border-2 border-black
                             hover:bg-black hover:text-white duration-300"><i class="bi bi-whatsapp text-xl"></i> <p>Chamar no Whatsapp</p></button>
@@ -214,15 +213,15 @@
                 </a>
             </div>
 
-            <div class="my-5 pl-6">
-                <a href="#" class="underline mx-4">Suporte</a>
-                <a href="#" class="underline mx-4">Informações</a>
-                <a href="#" class="underline mx-4">Marketing</a>
+            <div class="my-5 pl-6 max-[796px]:pl-0">
+                <a href="#" class="underline mx-4 max-[796px]:block max-[796px]:mt-3">Suporte</a>
+                <a href="#" class="underline mx-4 max-[796px]:block max-[796px]:mt-3">Informações</a>
+                <a href="#" class="underline mx-4 max-[796px]:block max-[796px]:mt-3">Marketing</a>
             </div>
 
             <div class="w-full h-[2px] bg-white mb-5"></div>
 
-            <p>TravelsGo 2024 &copy; Todos os direitos reservados</p>
+            <p class="max-[796px]:text-sm">TravelsGo 2024 &copy; Todos os direitos reservados</p>
         </div>
     </footer>
 </body>
