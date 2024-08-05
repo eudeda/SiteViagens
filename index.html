@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
     <title>Viagens</title>
     <script src="js/script.js"defer></script>
+    <script src="js/mob-menu.js"defer></script>
 </head>
 <body class="font-Poppins bg-[#E3E3E3]">
     <header id="header" class="w-full py-5 fixed top-0 left-0 duration-300 z-10">
@@ -20,15 +21,20 @@
             </div>
             <nav class="max-[796px]:hidden">
                 <ul class="flex gap-x-20">
-                    <li><a href="#" id="menu-link" class="inline-block text-white hover:scale-110 duration-300">Início</a></li>
-                    <li><a href="#" id="menu-link" class="inline-block text-white hover:scale-110 duration-300">Destinos</a></li>
-                    <li><a href="#" id="menu-link" class="inline-block text-white hover:scale-110 duration-300">Hotéis</a></li>
-                    <li><a href="#" id="menu-link" class="inline-block text-white hover:scale-110 duration-300">Passagens</a></li>
+                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Início</a></li>
+                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Destinos</a></li>
+                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Hotéis</a></li>
+                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Passagens</a></li>
                 </ul>
             </nav>
             <a href="#">
                 <button id="menu-btn" class="w-[140px] h-[50px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black max-[796px]:hidden">Contato</button>
             </a>
+
+            <div id="mob-menu-btn" class="hidden max-[796px]:block">
+                <div class="mob-menu-lines line1 w-8 bg-white h-[3px] my-2 duration-200"></div>
+                <div class="mob-menu-lines line2 w-5 bg-white h-[3px] my-2 duration-200"></div>
+            </div>
         </div>
 
     </header>
@@ -59,7 +65,7 @@
                 </article>
 
                 <article class="flex justify-between flex-row-reverse my-20 max-[796px]:flex-col">
-                    <div class="flex flex-col justify-center w-2/4 max-[796px]:w-full max-[900px]:ml-10">
+                    <div class="flex flex-col justify-center w-2/4 max-[796px]:w-full max-[796px]:ml-0 max-[900px]:ml-10">
                         <h3 class="text-5xl font-bold my-5"><span class="font-extralight">Os </span>melhores<br>destinos</h3>
                         <p class="max-[796px]:mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo voluptatibus quasi Lorem.</p>
                     </div>
@@ -83,8 +89,8 @@
 
         <section class="bg-white py-20">
             <div class="view">
-                <article class="flex items-center gap-x-[350px] max-[796px]:flex-col max-[900px]:gap-x-0">
-                    <div class="w-1/2 max-[900px]:w-3/5">
+                <article class="flex items-center gap-x-[300px] max-[796px]:flex-col max-[900px]:gap-x-0">
+                    <div class="w-1/2 max-[796px]:w-full max-[900px]:w-3/5">
                         <h3 class="text-5xl mb-5 max-[796px]:text-4xl">Fale agora com a<span class="block font-bold">nossa equipe</span></h3>
                         <p class="max-[796px]:mb-5">E solicite um orçamento que cabe no seu bolso</p>
                     </div>
@@ -168,12 +174,12 @@
 
         <section class="bg-white py-20">
             <div class="view">
-                <article class="flex items-center gap-x-[350px] max-[796px]:flex-col">
-                    <div>
-                        <h3 class="text-5xl mb-5 max-[796px]:text-4xl">Fale agora com a <span class="block font-bold">nossa equipe</span></h3>
+                <article class="flex items-center gap-x-[300px] max-[796px]:flex-col max-[900px]:gap-x-0">
+                    <div class="w-1/2 max-[796px]:w-full max-[900px]:w-3/5">
+                        <h3 class="text-5xl mb-5 max-[796px]:text-4xl">Fale agora com a<span class="block font-bold">nossa equipe</span></h3>
                         <p class="max-[796px]:mb-5">E solicite um orçamento que cabe no seu bolso</p>
                     </div>
-                    <div class="w-96 max-[796px]:w-full">
+                    <div class="w-96 max-[796px]:w-full max-[900px]:w-2/5">
                         <a href="#" class="">
                             <button class="flex items-center justify-between py-0 px-[60px] w-full h-[60px] mx-auto mt-0 mb-5 border-2 border-black
                             hover:bg-black hover:text-white duration-300"><i class="bi bi-whatsapp text-xl"></i> <p>Chamar no Whatsapp</p></button>
