@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/output.css"/>
+    <link rel="stylesheet" href="css/output.css" />
     <link rel="shortcut icon" href="imgs/logotipo.webp" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <title>Viagens</title>
-    <script src="js/script.js"defer></script>
-    <script src="js/mob-menu.js"defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/mob-menu.js" defer></script>
 </head>
+
 <body class="font-Poppins bg-[#E3E3E3]">
     <header id="header" class="w-full py-5 fixed top-0 left-0 duration-300 z-10">
         <div class="view flex justify-between items-center">
@@ -21,31 +24,49 @@
             </div>
             <nav class="max-[796px]:hidden">
                 <ul class="flex gap-x-20">
-                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Início</a></li>
-                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Destinos</a></li>
-                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Hotéis</a></li>
-                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Passagens</a></li>
+                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Início</a>
+                    </li>
+                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Destinos</a>
+                    </li>
+                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Hotéis</a>
+                    </li>
+                    <li><a href="#" class="menu-link inline-block text-white hover:scale-110 duration-300">Passagens</a>
+                    </li>
                 </ul>
             </nav>
             <a href="#">
-                <button id="menu-btn" class="w-[140px] h-[50px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black max-[796px]:hidden">Contato</button>
+                <button id="menu-btn"
+                    class="w-[140px] h-[50px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black max-[796px]:hidden">Contato</button>
             </a>
 
-            <div id="mob-menu-btn" class="hidden max-[796px]:block">
+            <div id="mob-menu-btn" class="hidden max-[796px]:block absolute right-5 z-30">
                 <div class="mob-menu-lines line1 w-8 bg-white h-[3px] my-2 duration-200"></div>
                 <div class="mob-menu-lines line2 w-5 bg-white h-[3px] my-2 duration-200"></div>
             </div>
-        </div>
 
+            <!-- Mobile Menu -->
+            <nav class="bg-[#000000f8] w-3/5 h-full fixed top-0 right-0 flex flex-col z-20 text-xl text-center">
+                <ul class="flex flex-col justify-center h-full">
+                    <li><a href="#" class="block my-5 py-4 text-white">Início</a></li>
+                    <li><a href="#" class="block my-5 py-4 text-white">Destinos</a></li>
+                    <li><a href="#" class="block my-5 py-4 text-white">Hotéis</a></li>
+                    <li><a href="#" class="block my-5 py-4 text-white">Passagens</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="h-[98vh] bg-[url('/imgs/bg-inicio-site.webp')] bg-no-repeat bg-center bg-cover">
         <div class="view h-full flex items-center">
 
             <div class="text-white">
-                <h1 class="text-[4em] leading-[70px] font-extralight max-[796px]:text-5xl">Descubra um <span class="block font-extrabold">novo mundo</span></h1>
-                <p class="text-xl font-light my-5 max-[796px]:text-base">Encontre destinos que ficarão para sempre em sua memória<span class="block max-[796px]:inline">com um orçamento que cabe no seu bolso</span></p>
-                <a href="#"><button class="w-[220px] h-[60px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black">Quero conhecer</button></a>
+                <h1 class="text-[4em] leading-[70px] font-extralight max-[796px]:text-5xl">Descubra um <span
+                        class="block font-extrabold">novo mundo</span></h1>
+                <p class="text-xl font-light my-5 max-[796px]:text-base">Encontre destinos que ficarão para sempre em
+                    sua memória<span class="block max-[796px]:inline">com um orçamento que cabe no seu bolso</span></p>
+                <a href="#"><button
+                        class="w-[220px] h-[60px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black">Quero
+                        conhecer</button></a>
             </div>
         </div>
     </section>
@@ -54,62 +75,79 @@
         <section class="py-20">
             <div class="view">
                 <article class="flex justify-between max-[796px]:flex-col">
-                        <div class="flex flex-col justify-center w-2/4 max-[796px]:w-full">
-                            <h3 class="text-5xl font-bold my-5"><span class="font-extralight">Viaje </span>com<br>conforto</h3>
-                            <p class="max-[796px]:mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo voluptatibus quasi Lorem.</p>
-                        </div>
+                    <div class="flex flex-col justify-center w-2/4 max-[796px]:w-full">
+                        <h3 class="text-5xl font-bold my-5"><span class="font-extralight">Viaje </span>com<br>conforto
+                        </h3>
+                        <p class="max-[796px]:mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit explicabo voluptatibus quasi Lorem.</p>
+                    </div>
 
-                        <div class="max-w-[480px] max-[900px]:w-96">
-                            <img class="" src="imgs/aviao.webp" alt="foto">
-                        </div>
+                    <div class="max-w-[480px] max-[900px]:w-96">
+                        <img class="" src="imgs/aviao.webp" alt="foto">
+                    </div>
                 </article>
 
                 <article class="flex justify-between flex-row-reverse my-20 max-[796px]:flex-col">
-                    <div class="flex flex-col justify-center w-2/4 max-[796px]:w-full max-[796px]:ml-0 max-[900px]:ml-10">
-                        <h3 class="text-5xl font-bold my-5"><span class="font-extralight">Os </span>melhores<br>destinos</h3>
-                        <p class="max-[796px]:mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo voluptatibus quasi Lorem.</p>
+                    <div
+                        class="flex flex-col justify-center w-2/4 max-[796px]:w-full max-[796px]:ml-0 max-[900px]:ml-10">
+                        <h3 class="text-5xl font-bold my-5"><span class="font-extralight">Os </span>melhores<br>destinos
+                        </h3>
+                        <p class="max-[796px]:mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit explicabo voluptatibus quasi Lorem.</p>
                     </div>
 
                     <div class="max-w-[480px] max-[900px]:w-96">
                         <img class="" src="imgs/carro.webp" alt="foto">
                     </div>
-            </article>
+                </article>
 
-            <article class="flex justify-between max-[796px]:flex-col">
-                <div class="flex flex-col justify-center w-2/4 max-[796px]:w-full">
-                    <h3 class="text-5xl font-bold my-5"><span class="font-extralight">Os </span>melhores<br>hotéis</h3>
-                    <p class="max-[796px]:mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit explicabo voluptatibus quasi Lorem.</p>
-                </div>
-                <div class="max-w-[480px] max-[900px]:w-96">
-                    <img class="" src="imgs/hoteis.webp" alt="foto">
-                </div>
-            </article>
-        </div>            
+                <article class="flex justify-between max-[796px]:flex-col">
+                    <div class="flex flex-col justify-center w-2/4 max-[796px]:w-full">
+                        <h3 class="text-5xl font-bold my-5"><span class="font-extralight">Os </span>melhores<br>hotéis
+                        </h3>
+                        <p class="max-[796px]:mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit explicabo voluptatibus quasi Lorem.</p>
+                    </div>
+                    <div class="max-w-[480px] max-[900px]:w-96">
+                        <img class="" src="imgs/hoteis.webp" alt="foto">
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section class="bg-white py-20">
             <div class="view">
                 <article class="flex items-center gap-x-[300px] max-[796px]:flex-col max-[900px]:gap-x-0">
                     <div class="w-1/2 max-[796px]:w-full max-[900px]:w-3/5">
-                        <h3 class="text-5xl mb-5 max-[796px]:text-4xl">Fale agora com a<span class="block font-bold">nossa equipe</span></h3>
+                        <h3 class="text-5xl mb-5 max-[796px]:text-4xl">Fale agora com a<span
+                                class="block font-bold">nossa equipe</span></h3>
                         <p class="max-[796px]:mb-5">E solicite um orçamento que cabe no seu bolso</p>
                     </div>
                     <div class="w-96 max-[796px]:w-full max-[900px]:w-2/5">
                         <a href="#" class="">
                             <button class="flex items-center justify-between py-0 px-[60px] w-full h-[60px] mx-auto mt-0 mb-5 border-2 border-black
-                            hover:bg-black hover:text-white duration-300"><i class="bi bi-whatsapp text-xl"></i> <p>Chamar no Whatsapp</p></button>
+                            hover:bg-black hover:text-white duration-300"><i class="bi bi-whatsapp text-xl"></i>
+                                <p>Chamar no Whatsapp</p>
+                            </button>
                         </a>
                         <a href="#" class="">
                             <button class="flex items-center justify-between py-0 px-[60px] w-full h-[60px] mx-auto mt-0 mb-5 border-2 border-black
-                            hover:bg-black hover:text-white duration-300"><i class="bi bi-envelope-at-fill text-xl"></i> <p>Mandar E-mail</p></button>
+                            hover:bg-black hover:text-white duration-300"><i
+                                    class="bi bi-envelope-at-fill text-xl"></i>
+                                <p>Mandar E-mail</p>
+                            </button>
                         </a>
                         <a href="#" class="">
                             <button class="flex items-center justify-between py-0 px-[60px] w-full h-[60px] mx-auto mt-0 mb-5 border-2 border-black
-                            hover:bg-black hover:text-white duration-300"><i class="bi bi-telephone-fill text-xl"></i> <p>Ligar</p></button>
+                            hover:bg-black hover:text-white duration-300"><i class="bi bi-telephone-fill text-xl"></i>
+                                <p>Ligar</p>
+                            </button>
                         </a>
                         <a href="#" class="">
                             <button class="flex items-center justify-between py-0 px-[60px] w-full h-[60px] mx-auto mt-0 mb-5 border-2 border-black
-                            hover:bg-black hover:text-white duration-300"><i class="bi bi-ui-checks text-xl"></i> <p>Formulário</p></button>
+                            hover:bg-black hover:text-white duration-300"><i class="bi bi-ui-checks text-xl"></i>
+                                <p>Formulário</p>
+                            </button>
                         </a>
                     </div>
                 </article>
@@ -119,9 +157,13 @@
         <section class="h-[600px] bg-[url('/imgs/hotel-bg.webp')] bg-no-repeat bg-center bg-cover bg-fixed relative">
             <div class="relative view z-[2] flex justify-center items-center h-full">
                 <div class="text-center text-white">
-                    <h3 class="text-5xl font-extralight max-[796px]:text-4xl">Hospedagem?<span class="block font-semibold">Deixa com a gente</span></h3>
-                    <p class="my-5 text-xl font-light max-[796px]:text-base">Os melhores hotéis e pousadas para o máximo de conforto para você e sua família</p>
-                    <a href="#"><button class="w-[220px] h-[60px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black">Conheça os hotéis</button></a>
+                    <h3 class="text-5xl font-extralight max-[796px]:text-4xl">Hospedagem?<span
+                            class="block font-semibold">Deixa com a gente</span></h3>
+                    <p class="my-5 text-xl font-light max-[796px]:text-base">Os melhores hotéis e pousadas para o máximo
+                        de conforto para você e sua família</p>
+                    <a href="#"><button
+                            class="w-[220px] h-[60px] text-lg text-white border-[1px] hover:bg-white duration-500 hover:text-black">Conheça
+                            os hotéis</button></a>
                 </div>
             </div>
             <div class="absolute top-0 left-0 h-full w-full bg-[#000000d7] z-[1]"></div>
@@ -131,7 +173,8 @@
             <div class="view flex max-[796px]:flex-col">
                 <div class="flex-1 max-[796px]:w-full">
                     <div class="sticky top-1/2 pb-9 max-[796px]:static">
-                        <h3 class="text-6xl font-light max-[796px]:text-5xl">Como<span class="block font-semibold">funciona?</span></h3>
+                        <h3 class="text-6xl font-light max-[796px]:text-5xl">Como<span
+                                class="block font-semibold">funciona?</span></h3>
                     </div>
                 </div>
                 <div class="flex-1 max-[796px]:w-full">
@@ -140,8 +183,11 @@
                             <img class="max-w-24" src="imgs/atendimento-ao-cliente.webp" alt="atendimento ao cliente">
                         </div>
                         <div class="max-[796px]:text-center">
-                            <h4 class="text-2xl font-bold mb-3">Você <span class="font-light">fala com a gente</span></h4>
-                            <p class="text-base max-[796px]:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt commodi.</p>
+                            <h4 class="text-2xl font-bold mb-3">Você <span class="font-light">fala com a gente</span>
+                            </h4>
+                            <p class="text-base max-[796px]:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt
+                                commodi.</p>
                         </div>
                     </article>
 
@@ -151,7 +197,9 @@
                         </div>
                         <div class="max-[796px]:text-center">
                             <h4 class="text-2xl font-bold mb-3">A gente <span class="font-light">planeja</span></h4>
-                            <p class="text-base max-[796px]:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt commodi.</p>
+                            <p class="text-base max-[796px]:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt
+                                commodi.</p>
                         </div>
 
                     </article>
@@ -163,10 +211,12 @@
 
                         <div class="max-[796px]:text-center">
                             <h4 class="text-2xl font-bold mb-3">Partiu <span class="font-light">viajar</span></h4>
-                            <p class="text-base max-[796px]:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt commodi.</p>
+                            <p class="text-base max-[796px]:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Distinctio eius omnis eos! Dolores velit quaerat reprehenderit fugiat nesciunt
+                                commodi.</p>
                         </div>
                     </article>
-                    
+
                 </div>
 
             </div>
@@ -176,25 +226,35 @@
             <div class="view">
                 <article class="flex items-center gap-x-[300px] max-[796px]:flex-col max-[900px]:gap-x-0">
                     <div class="w-1/2 max-[796px]:w-full max-[900px]:w-3/5">
-                        <h3 class="text-5xl mb-5 max-[796px]:text-4xl">Fale agora com a<span class="block font-bold">nossa equipe</span></h3>
+                        <h3 class="text-5xl mb-5 max-[796px]:text-4xl">Fale agora com a<span
+                                class="block font-bold">nossa equipe</span></h3>
                         <p class="max-[796px]:mb-5">E solicite um orçamento que cabe no seu bolso</p>
                     </div>
                     <div class="w-96 max-[796px]:w-full max-[900px]:w-2/5">
                         <a href="#" class="">
                             <button class="flex items-center justify-between py-0 px-[60px] w-full h-[60px] mx-auto mt-0 mb-5 border-2 border-black
-                            hover:bg-black hover:text-white duration-300"><i class="bi bi-whatsapp text-xl"></i> <p>Chamar no Whatsapp</p></button>
+                            hover:bg-black hover:text-white duration-300"><i class="bi bi-whatsapp text-xl"></i>
+                                <p>Chamar no Whatsapp</p>
+                            </button>
                         </a>
                         <a href="#" class="">
                             <button class="flex items-center justify-between py-0 px-[60px] w-full h-[60px] mx-auto mt-0 mb-5 border-2 border-black
-                            hover:bg-black hover:text-white duration-300"><i class="bi bi-envelope-at-fill text-xl"></i> <p>Mandar E-mail</p></button>
+                            hover:bg-black hover:text-white duration-300"><i
+                                    class="bi bi-envelope-at-fill text-xl"></i>
+                                <p>Mandar E-mail</p>
+                            </button>
                         </a>
                         <a href="#" class="">
                             <button class="flex items-center justify-between py-0 px-[60px] w-full h-[60px] mx-auto mt-0 mb-5 border-2 border-black
-                            hover:bg-black hover:text-white duration-300"><i class="bi bi-telephone-fill text-xl"></i> <p>Ligar</p></button>
+                            hover:bg-black hover:text-white duration-300"><i class="bi bi-telephone-fill text-xl"></i>
+                                <p>Ligar</p>
+                            </button>
                         </a>
                         <a href="#" class="">
                             <button class="flex items-center justify-between py-0 px-[60px] w-full h-[60px] mx-auto mt-0 mb-5 border-2 border-black
-                            hover:bg-black hover:text-white duration-300"><i class="bi bi-ui-checks text-xl"></i> <p>Formulário</p></button>
+                            hover:bg-black hover:text-white duration-300"><i class="bi bi-ui-checks text-xl"></i>
+                                <p>Formulário</p>
+                            </button>
                         </a>
                     </div>
                 </article>
@@ -207,15 +267,21 @@
 
             <div class="text-2xl">
                 <a href="#">
-                    <button class="w-16 h-16 rounded-[50%] border-2 mx-3 hover:bg-white hover:text-black duration-300"><i class="bi bi-instagram"></i></button>
+                    <button
+                        class="w-16 h-16 rounded-[50%] border-2 mx-3 hover:bg-white hover:text-black duration-300"><i
+                            class="bi bi-instagram"></i></button>
                 </a>
 
                 <a href="#">
-                    <button class="w-16 h-16 rounded-[50%] border-2 mx-3 hover:bg-white hover:text-black duration-300"><i class="bi bi-facebook"></i></button>
+                    <button
+                        class="w-16 h-16 rounded-[50%] border-2 mx-3 hover:bg-white hover:text-black duration-300"><i
+                            class="bi bi-facebook"></i></button>
                 </a>
 
                 <a href="#">
-                    <button class="w-16 h-16 rounded-[50%] border-2 mx-3 hover:bg-white hover:text-black duration-300"><i class="bi bi-tiktok"></i></button>
+                    <button
+                        class="w-16 h-16 rounded-[50%] border-2 mx-3 hover:bg-white hover:text-black duration-300"><i
+                            class="bi bi-tiktok"></i></button>
                 </a>
             </div>
 
@@ -231,4 +297,5 @@
         </div>
     </footer>
 </body>
+
 </html>
