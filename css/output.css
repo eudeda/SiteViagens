@@ -3005,6 +3005,10 @@ video {
     max-width: 360px;
   }
 
+  .max-\[796px\]\:max-w-\[300px\] {
+    max-width: 300px;
+  }
+
   .max-\[796px\]\:flex-col {
     flex-direction: column;
   }
