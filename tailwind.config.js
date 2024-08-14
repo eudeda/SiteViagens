@@ -13,10 +13,12 @@ module.exports = {
       const newUtilities = {
         '.active1': {
           transform: 'rotate(45deg) translate(30%)',
+          'background-color': 'black'
         },
         '.active2': {
           transform: 'rotate(-45deg) translate(25%)',
           width: '2rem',
+          'background-color': 'black'
         },
       }
       addUtilities(newUtilities, ['responsive', 'hover'])

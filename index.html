@@ -45,14 +45,21 @@
             </div>
 
             <!-- Mobile Menu -->
-            <nav class="bg-[#000000f8] w-3/5 h-full fixed top-0 right-0 flex flex-col z-20 text-xl text-center">
+            <nav id="mob-menu" class="bg-[#ffffff] w-0 h-full fixed top-0 right-0 text-xl z-20 duration-300">
                 <ul class="flex flex-col justify-center h-full">
-                    <li><a href="#" class="block my-5 py-4 text-white">Início</a></li>
-                    <li><a href="#" class="block my-5 py-4 text-white">Destinos</a></li>
-                    <li><a href="#" class="block my-5 py-4 text-white">Hotéis</a></li>
-                    <li><a href="#" class="block my-5 py-4 text-white">Passagens</a></li>
+                    <li><a href="#" class="mob-menu-link block my-5 pl-4 text-black">Início</a></li>
+                    <div class="px-4"><div class="w-full h-[1px] bg-[#38c7ff]"></div></div> <!-- underline -->
+                    <li><a href="#" class="mob-menu-link block my-5 pl-4 text-black">Hotéis</a></li>
+                    <div class="px-4"><div class="w-full h-[1px] bg-[#38c7ff]"></div></div> <!-- underline -->
+                    <li><a href="#" class="mob-menu-link block my-5 pl-4 text-black">Destinos</a></li>
+                    <div class="px-4"><div class="w-full h-[1px] bg-[#38c7ff]"></div></div> <!-- underline -->
+                    <li><a href="#" class="mob-menu-link block my-5 pl-4 text-black">Passagens</a></li>
+                    <div class="px-4"><div class="w-full h-[1px] bg-[#38c7ff]"></div></div> <!-- underline -->
                 </ul>
             </nav>
+
+            <!-- overlay -->
+            <div id="overlay" class="fixed top-0 left-0 w-full h-full bg-[#00000093] hidden"></div>
         </div>
     </header>
 
