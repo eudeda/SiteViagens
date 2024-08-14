@@ -19,8 +19,7 @@ const closeMenu = () => {
 
 mobMenuBtn.addEventListener('click', () => {
     animateMenu();
-    mobMenu.classList.toggle('w-0');
-    mobMenu.classList.add('w-3/5');
+    mobMenu.classList.toggle('w-3/5');
     overlay.classList.toggle('hidden');
 });
 
