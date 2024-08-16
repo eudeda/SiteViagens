@@ -2040,12 +2040,20 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/imgs\/bg-inicio-site\.webp\'\)\] {
-  background-image: url('/imgs/bg-inicio-site.webp');
+.bg-\[url\(\'\/imgs\/bg-hero2\.jpg\'\)\] {
+  background-image: url('/imgs/bg-hero2.jpg');
 }
 
 .bg-\[url\(\'\/imgs\/hotel-bg\.webp\'\)\] {
   background-image: url('/imgs/hotel-bg.webp');
+}
+
+.bg-\[url\(\'\/imgs\/bg-hero\.jpg\'\)\] {
+  background-image: url('/imgs/bg-hero.jpg');
+}
+
+.bg-\[url\(\'\/imgs\/bg-hero\.webp\'\)\] {
+  background-image: url('/imgs/bg-hero.webp');
 }
 
 .decoration-slice {
@@ -2960,6 +2968,10 @@ video {
     display: inline;
   }
 
+  .max-\[796px\]\:flex {
+    display: flex;
+  }
+
   .max-\[796px\]\:hidden {
     display: none;
   }
@@ -2968,16 +2980,16 @@ video {
     width: 100%;
   }
 
-  .max-\[796px\]\:max-w-\[340px\] {
-    max-width: 340px;
-  }
-
   .max-\[796px\]\:max-w-\[350px\] {
     max-width: 350px;
   }
 
   .max-\[796px\]\:flex-col {
     flex-direction: column;
+  }
+
+  .max-\[796px\]\:justify-center {
+    justify-content: center;
   }
 
   .max-\[796px\]\:pl-0 {
